@@ -1,0 +1,18 @@
+{
+  "segments": [
+    {
+      "speaker": "SPEAKER_01",
+      "startSec": 0.5,
+      "endSec": 1.8,
+      "sourceText": "Hello and welcome to this short demo.",
+      "translatedText": "Hola y bienvenido a esta demo corta."
+    },
+    {
+      "speaker": "SPEAKER_02",
+      "startSec": 2.1,
+      "endSec": 3.8,
+      "sourceText": "We are testing the Node dubbing pipeline.",
+      "translatedText": "Estamos probando el pipeline de doblaje en Node."
+    }
+  ]
+}

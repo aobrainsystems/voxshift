@@ -1,0 +1,51 @@
+{
+  "name": "voxshift-node",
+  "version": "0.1.0",
+  "description": "Dubbing pipeline",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./cli": "./dist/cli.js"
+  },
+  "bin": {
+    "voxshift-node": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/cli.ts",
+    "start": "node dist/cli.js",
+    "typecheck": "tsc --noEmit",
+    "fixture:generate": "npm run build --silent && node dist/scripts/generateFixture.js",
+    "smoke": "npm run build --silent && node dist/scripts/smoke.js",
+    "smoke:e2e": "npm run build --silent && node dist/scripts/smokeE2E.js",
+    "smoke:e2e:pro": "npm run build --silent && node dist/scripts/smokeE2EPro.js",
+    "smoke:e2e:gemini3": "npm run build --silent && node dist/scripts/smokeE2EGemini3.js",
+    "lint": "echo \"No lint configuration yet\"",
+    "clean": "rm -rf dist artifacts"
+  },
+  "keywords": [
+    "dubbing",
+    "gemini",
+    "nodejs",
+    "translation",
+    "tts"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@google/genai": "^0.14.1",
+    "commander": "^13.1.0",
+    "dotenv": "^16.4.7",
+    "pino": "^9.6.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.6",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}

@@ -1,0 +1,4 @@
+Hello. This is a Voxshift smoke test fixture.
+We are validating transcription, translation, and segmentation.
+Each sentence has a short pause.
+The system should return more than one segment.
