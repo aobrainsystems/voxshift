@@ -25,6 +25,8 @@
     "smoke:e2e": "npm run build --silent && node dist/scripts/smokeE2E.js",
     "smoke:e2e:pro": "npm run build --silent && node dist/scripts/smokeE2EPro.js",
     "smoke:e2e:gemini3": "npm run build --silent && node dist/scripts/smokeE2EGemini3.js",
+    "youtube:intake": "npm run build --silent && node dist/scripts/youtubeIntake.js",
+    "youtube:run": "npm run build --silent && node dist/scripts/youtubeFlow.js",
     "lint": "echo \"No lint configuration yet\"",
     "clean": "rm -rf dist artifacts"
   },
@@ -40,6 +42,7 @@
     "@google/genai": "^0.14.1",
     "commander": "^13.1.0",
     "dotenv": "^16.4.7",
+    "googleapis": "^157.0.0",
     "pino": "^9.6.0",
     "zod": "^3.24.1"
   },

@@ -1,0 +1,11 @@
+{
+  "allowOnlySourceChannelIds": [
+    "UC_REPLACE_WITH_YOUR_CHANNEL_ID"
+  ],
+  "allowRiskOverride": true,
+  "blockIfNotPublic": true,
+  "blockIfRegionRestricted": true,
+  "blockIfNotEmbeddable": true,
+  "blockMusicCategoryAsSoftRisk": true,
+  "requireDefaultAudioLanguage": true
+}
